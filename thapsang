@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Thắp sáng nụ cười</title>
+  <style>
+    body {
+      margin: 0;
+      background: #0b2d4a;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    .container {
+      padding: 30px;
+    }
+    .map {
+      position: relative;
+      max-width: 300px;
+      margin: 20px auto;
+    }
+    .map img {
+      width: 100%;
+      opacity: 0.7;
+    }
+    .dot {
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      background: #6CFF9B;
+      border-radius: 50%;
+      top: 55%;
+      left: 52%;
+      box-shadow: 0 0 15px #6CFF9B;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.6); opacity: 0.6; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>✨ Bạn vừa thắp thêm một nụ cười ✨</h2>
+  <p>Một điểm sáng được thắp lên tại Quảng Trị</p>
+
+  <div class="map">
+    <img src="vietnam-map.png" alt="Bản đồ Việt Nam">
+    <div class="dot"></div>
+  </div>
+
+  <p><strong>Close-up đồng hành cùng nạn nhân da cam Việt Nam</strong></p>
+</div>
+
+</body>
+</html>
